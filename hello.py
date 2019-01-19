@@ -1,2 +1,2 @@
 print("show hello")
-print("another not hello")
+print("another no hello")
