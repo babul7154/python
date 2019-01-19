@@ -1,3 +1,1 @@
-print("hello babul")
-def a():
-    
+# I am going to write my first program
