@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for BookInfo in object_list %}
+<div class="post-entry">
+    <h2><a href="">{{ BookInfo.book_name}}</a></h2>
+    <p>{{ BookInfo.rating}}</p>
+</div>
+{% endfor %}
+{% endblock content %}
