@@ -9,3 +9,7 @@ class  home(TemplateView):
 class about(TemplateView):
     template_name = "about.html"
 
+class video(TemplateView):
+    template_name = "video.html"
+
+
