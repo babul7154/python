@@ -1,4 +1,3 @@
-# python
-automate the boaring stuff with python
-Apply css in Django
-use of media file
+# Django
+Integration of css in Django and use of media file.
+
