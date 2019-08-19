@@ -8,7 +8,7 @@ from .models import Post
 class BlogTests(TestCase):
 
     def setUp(self):
-        self.user = get_user_model().objects.create_user(
+        self.user = Post.objects.create_user(
             username='testuser',
             email='test@email.com',
             password='secret'
@@ -42,3 +42,4 @@ class BlogTests(TestCase):
         self.assertEqual(no_response.status_code, 404)
         self.assertContains(response, 'A good title')
         self.assertTemplateUsed(response, 'post_detail.html')
+  

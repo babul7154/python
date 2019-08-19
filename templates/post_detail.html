@@ -1,13 +1,9 @@
-{% extends 'base.html' %}
-
-{% block content %}
-<div class="nav-right">
-    <a href="{% url 'blog_update' post.pk %}">+ Update blog detail</a>
+{% extends 'base.html' %} {% block content %}
+  <p><a href="{% url 'blog_update' post.pk %}">+ Update blog detail</a></p>
+  <p><a href="{% url 'delete_post' post.pk %}">- Delete blog detail</a></p>
+<div class="post-entry">
+  <h2>{{ post.title }}</h2>
+  <p>{{ post.body }}</p>
 </div>
-<div class="nav-right"><a href="{% url 'delete_post' post.pk %}">- Delete blog detail</a></div>
-  <div class="post-entry">
-    <h2>{{ post.title }}</h2>
-    <p>{{ post.body }}</p>
-  </div>
-
+<a href="/">Home</a>
 {% endblock content %}
