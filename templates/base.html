@@ -19,7 +19,7 @@
     </header>
  
   {% if user.is_authenticated  %}
-    <p>Login Successful for {{user.username}}</p>
+    <p>Login Successful for <b><u>{{user.username}}</u></b> </p>
     <p><a href="{% url 'logout' %}">Log out</a></p>
   {% else %}
     <p>You are not logged in.</p>

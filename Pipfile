@@ -5,7 +5,7 @@ verify_ssl = true
 
 [dev-packages]
 pytest = "*"
-black = "*"
+yapf = "*"
 
 [packages]
 django = "==2.1"
