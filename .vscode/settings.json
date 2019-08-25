@@ -1,3 +1,13 @@
 {
-    "python.pythonPath": "C:\\Users\\My World\\.virtualenvs\\news-_3RQqQOy\\Scripts\\python.exe"
+    "python.pythonPath": "C:\\Users\\My World\\.virtualenvs\\news-_3RQqQOy\\Scripts\\python.exe",
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "editor.fontFamily": "Bahnschrift, 'Courier New', monospace",
+    "editor.formatOnType": true
 }
