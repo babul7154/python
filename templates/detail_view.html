@@ -1,6 +1,25 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    {{movie.plot}}
+
+<div>
+<button type="button" class="btn btn-primary"> This Movie name is :
+   <span class="badge badge-light">{{movie.title}}</span>
+  </div>
+</button>
+<div>
+<button type="button" class="btn btn-primary"> This Movie Plot is:
+   <span class="badge badge-light">{{movie.plot}}</span>
+  </div>
+</button>
+<div>
+<button type="button" class="btn btn-primary"> This Movie Runtime is rated:
+   <span class="badge badge-light">{{movie.runtime}} Minutes</span>
+  </div>
+</button><div>
+<button type="button" class="btn btn-primary"> This Movie is rated:
+   <span class="badge badge-light">{{movie.get_rating_display}}</span>
+  </div>
+</button>
 {% endblock content %}
     

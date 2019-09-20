@@ -2,12 +2,13 @@
 
 
 {% block content %}
-    
+    <h3><u>Movie's Name</u></h3>
     {% for movie in object_list  %}
-    <h2><a href="{% url 'moviedetail' movie.pk %}">{{movie.title}}</a></h2>
-    <h3>{{movie.year}}</h3>
-        
+    <button type="button" class="btn btn-primary"><span class="badge badge-light"><a href="{% url 'moviedetail' movie.pk %}">{{movie.title}}({{movie.year}})</a></span>
+</button>
+
+   
     {% endfor %}
-        
+   
 {% endblock content %}
     

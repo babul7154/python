@@ -19,4 +19,6 @@ class Movie(models.Model):
     runtime=models.PositiveIntegerField()
     website=models.URLField(blank=True)
     def __str__(self):
-        return self.title
+        return '{} ({})'.format(
+            self.title,self.year
+        )
